@@ -1,0 +1,14 @@
+on: [push]
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    name: A job to run the cachex action
+    steps:
+      - name: runs cachex
+        id: cachex
+        uses: actions/cachex@v1.0.0
+        with:
+          provider: "github"
+      - name: get cachex output
+        run: echo "The provider was ${{ steps.cachex.outputs.provider }}"

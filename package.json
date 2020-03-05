@@ -1,0 +1,37 @@
+{
+  "name": "@defhub/cachex",
+  "version": "1.0.0",
+  "description": "the multi-purpose github action cache",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "scripty"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/defhub/cachex.git"
+  },
+  "keywords": [
+    "github",
+    "actions",
+    "cache"
+  ],
+  "author": "defhub",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/defhub/cachex/issues"
+  },
+  "homepage": "https://github.com/defhub/cachex#readme",
+  "scripty": {
+    "silent": true
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.3",
+    "@actions/github": "^2.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^13.7.7",
+    "@zeit/ncc": "^0.21.1",
+    "scripty": "^1.9.1",
+    "typescript": "^3.8.3"
+  }
+}

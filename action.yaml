@@ -1,0 +1,13 @@
+name: "cachex"
+description: "🗃️ the multi-purpose github action cache"
+inputs:
+  provider:
+    description: "Which provider you want to uso to persist your data."
+    required: true
+    default: "github"
+outputs:
+  result:
+    description: "The result output"
+runs:
+  using: "node12"
+  main: "dist/index.js"
